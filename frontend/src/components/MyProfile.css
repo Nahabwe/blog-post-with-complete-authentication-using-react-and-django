@@ -1,0 +1,92 @@
+/* Container for centering and spacing */
+.myprofile__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Ensure the container takes full viewport height */
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Include padding in width/height calculations */
+}
+
+/* Heading styling */
+.myprofile__heading {
+    margin-bottom: 30px;
+    /* Increased margin for better spacing */
+    font-size: 2.5rem;
+    /* Larger font size for the heading */
+    font-weight: 600;
+    /* Bold font for emphasis */
+    color: #333;
+    text-align: center;
+    /* Center align heading */
+}
+
+/* Details section styling */
+.myprofile__details {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* Rounded corners for a softer look */
+    padding: 30px;
+    /* Increased padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    max-width: 600px;
+    /* Restrict maximum width for better readability */
+    width: 100%;
+    /* Full width within the container */
+    margin: 0 auto;
+    /* Center align the details section */
+}
+
+/* Individual detail item styling */
+.myprofile__details p {
+    margin: 15px 0;
+    /* Increased margin for better spacing between items */
+    font-size: 1.2rem;
+    /* Larger font size for better readability */
+    line-height: 1.5;
+    /* Increased line height for better readability */
+}
+
+/* Strong element styling */
+.myprofile__details strong {
+    color: #007bff;
+    /* Consistent color for labels */
+    font-weight: 500;
+    /* Slightly bold for emphasis */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .myprofile__heading {
+        font-size: 2rem;
+        /* Adjust heading size on smaller screens */
+    }
+
+    .myprofile__details {
+        padding: 20px;
+        /* Adjust padding on smaller screens */
+    }
+
+    .myprofile__details p {
+        font-size: 1rem;
+        /* Adjust font size on smaller screens */
+    }
+}
+
+/* Add styles for the new blog post count section */
+.myprofile__details p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.myprofile__details strong {
+    color: #007bff;
+    font-weight: 500;
+}

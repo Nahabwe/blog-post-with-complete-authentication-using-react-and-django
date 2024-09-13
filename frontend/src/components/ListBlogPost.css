@@ -1,0 +1,74 @@
+/* Container for the list of blog posts */
+.list-blog-post {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading for the list of blog posts */
+.list-blog-post__heading {
+    font-size: 1.5rem; /* Adjusted size to fit better */
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow-wrap: break-word; /* Ensures heading text doesn't overflow */
+    word-wrap: break-word; /* Older browsers */
+}
+
+/* Grid container for the blog posts */
+.list-blog-post__posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+/* Individual blog post card */
+.list-blog-post__post-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Hover effect for the blog post card */
+.list-blog-post__post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title of the blog post */
+.list-blog-post__post-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.list-blog-post__post-title:hover {
+    color: #0056b3;
+}
+
+/* Description of the blog post */
+.list-blog-post__post-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Post content container */
+.list-blog-post__post-content {
+    flex: 1;
+}

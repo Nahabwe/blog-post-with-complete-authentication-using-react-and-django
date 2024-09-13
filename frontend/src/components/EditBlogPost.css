@@ -1,0 +1,81 @@
+/* Container for the edit blog post form */
+.edit-blog-post {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading for the edit blog post form */
+.edit-blog-post__heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.edit-blog-post__form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+.edit-blog-post__label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Input field styling */
+.edit-blog-post__input,
+.edit-blog-post__textarea,
+.edit-blog-post__file-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Specific styles for different input types */
+.edit-blog-post__input {
+    font-size: 1rem;
+}
+
+.edit-blog-post__textarea {
+    font-size: 1rem;
+    min-height: 100px;
+}
+
+.edit-blog-post__file-input {
+    font-size: 1rem;
+}
+
+/* Button styling */
+.edit-blog-post__button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px; /* Adjusted padding for a better button size */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    align-self: center; /* Center the button horizontally */
+}
+
+/* Button hover effect */
+.edit-blog-post__button:hover {
+    background-color: #0056b3;
+}
+
+/* Image preview styling */
+.edit-blog-post__image-preview {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,122 @@
+/* Base styles */
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbar__logo {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+    color: #f0a500;
+}
+
+.navbar__user-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__user-container h3 {
+    margin-right: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.navbar__user-container .MuiAvatar-root {
+    width: 35px;
+    height: 35px;
+    background-color: #f0a500;
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+    .navbar__menu-toggle {
+        display: none; /* Hide menu icon on desktop */
+    }
+
+    .navbar__menu-close {
+        display: none; /* Hide close icon on desktop */
+    }
+
+    .navbar__links {
+        display: flex; /* Show links on desktop */
+        align-items: center;
+    }
+
+    .navbar__link {
+        margin: 0 15px; /* Adjust margin for desktop view */
+        font-size: 16px; /* Default font size for desktop */
+    }
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .navbar__menu-toggle {
+        display: flex; /* Show menu icon on mobile */
+        cursor: pointer;
+    }
+
+    .navbar__links {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #333;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        z-index: 101;
+    }
+
+    .navbar__links.open {
+        display: flex; /* Show menu when open */
+    }
+
+    .navbar__link {
+        margin: 20px 0; /* Space between links */
+        font-size: 18px;
+    }
+
+    .navbar__menu-close {
+        display: flex; /* Show close icon on mobile */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
